@@ -7,6 +7,7 @@ function range(inicio, fim, skip=1) {
     // opcao if 
   //  const n1 = fim === undefined ? 1 :  inicio
   //  const n2 = fim === undefined ? inicio : fim
+  //
 
     let arr = []
     if (inicio < fim) {
