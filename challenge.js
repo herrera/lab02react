@@ -1,7 +1,7 @@
 function range(inicio, fim, skip=1) {
     if (fim == undefined) {
         fim = inicio
-        inicio = 1
+        inicio = 1 
     }
 
     // opcao if 

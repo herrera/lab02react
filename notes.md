@@ -3,7 +3,7 @@ untracked -- arquivos nao rastreados (novos)
 staged(preparado) -- foi marcado para realizar commit por git add
 committed 
 
-git commit -ma ' test'  --- faz um add arq rastreados e depois commit 
+git commit -am ' test'  --- faz um add arq rastreados e depois commit 
 git rm arq   -- remove o arquivo e git faz add automaticamente para o staged 
     caso tenha sido alterado alteriormente e staged,  e necessario git rm -f arq  para forçar o delete
  git rm --cached arq  - remove o arquivo identico a rm, so q nao apaga localmente e deixa nao rastreavel
@@ -14,7 +14,7 @@ git rm arq   -- remove o arquivo e git faz add automaticamente para o staged
  git log --pretty=online  -->
  git log --pretty=format:"%h - %an, %ar : %s"  --> mostra 6 dig hash, nome usuario, tempo q foi alterado, nome commit
  git log --pretty=format:"%h %s" --graph  --> mostra grafico ASCII, bom para merge
- 
+
 
 
 
