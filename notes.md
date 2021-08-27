@@ -24,6 +24,8 @@ git remote add lab  git@github.com:herrera/lab02react.git --> pode usar lab na l
 git remote show lab --> informacao mais detalhada
 git tag -a v1.2 -m 'desc' 9fceb02 --> cria uma tag para um commit especifico; Não sao envidadas para o servidor remoto
 git push origin v1.1 --> envia a tag para o servidor remoto
+git push origin --tags --> envia todas as tags para o servidor remoto
+
 
 
 
