@@ -11,7 +11,10 @@ git rm arq   -- remove o arquivo e git faz add automaticamente para o staged
      é similar a mv arq1 arqv2 , git rm arq1 e git add arq
  git log -p -2   --- -p  mostra as diferencas do commit e -2 os dois ultimos
  git log --stat  --> log com statistica reduzida
-
+ git log --pretty=online  -->
+ git log --pretty=format:"%h - %an, %ar : %s"  --> mostra 6 dig hash, nome usuario, tempo q foi alterado, nome commit
+ git log --pretty=format:"%h %s" --graph  --> mostra grafico ASCII, bom para merge
+ 
 
 
 
