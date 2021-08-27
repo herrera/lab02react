@@ -15,6 +15,13 @@ git rm arq   -- remove o arquivo e git faz add automaticamente para o staged
  git log --pretty=format:"%h - %an, %ar : %s"  --> mostra 6 dig hash, nome usuario, tempo q foi alterado, nome commit
  git log --pretty=format:"%h %s" --graph  --> mostra grafico ASCII, bom para merge
 
+git commit --amend --> adiciona ao ultimo commit os arquivos q estao no staged. 
+
+-----------------------------------------------------------------------------------
+git remote -v -> lista urls remotos 
+git remote add lab  git@github.com:herrera/lab02react.git --> pode usar lab na linha de comando ao inves da url completa
+                                                       por exemplo git fetch lab
+git remote show lab --> informacao mais detalhada
 
 
 
