@@ -33,5 +33,8 @@ git config --global alias.unstage 'reset HEAD --'   --> criacao de comandos
 git merge hotfix --> traz as alteracoes de hotfix para o branch atual. merge fast forward significa 
                     q traz ponteiro pra frente, sem maiores alteraçoes. commit de merge, é criado um
                     novo snapshot (e tem mais de um pai)
+git branch -vv  --> lista os branches e o tracking  (informacao local, dar git fetch --all para atualizar)
 
+git fetch --> baixa as alteracoes no servidor q vc ainda nao tem, ele n modificará seu diretorio de trabalho
+git pull  -->  é um git fetch seguido de um git merge
 
