@@ -30,4 +30,8 @@ git checkout -b version2 v2.0.0 --> cria uma branch com a tag v2.0.0 com o nome 
 git config --global alias.ci commit --> cria um alias (ci) para o comando commit 
 git config --global alias.unstage 'reset HEAD --'   --> criacao de comandos 
 
+git merge hotfix --> traz as alteracoes de hotfix para o branch atual. merge fast forward significa 
+                    q traz ponteiro pra frente, sem maiores alteraçoes. commit de merge, é criado um
+                    novo snapshot (e tem mais de um pai)
+
 
