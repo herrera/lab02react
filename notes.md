@@ -9,6 +9,10 @@ git rm arq   -- remove o arquivo e git faz add automaticamente para o staged
  git rm --cached arq  - remove o arquivo identico a rm, so q nao apaga localmente e deixa nao rastreavel
  git rm arq1 arq2  -altera nome arquivo e coloca como staged
      é similar a mv arq1 arqv2 , git rm arq1 e git add arq
+
+ git add -p -->  Patch
+                opcao s (split) voce pode selecionar conteudo do arquivo q vai para o stage,
+                opcao e voce pode alterar conteudo antes de mandar para stage
  git log -p -2   --- -p  mostra as diferencas do commit e -2 os dois ultimos
  git log --stat  --> log com statistica reduzida
  git log --pretty=oneline  -->
@@ -17,6 +21,7 @@ git rm arq   -- remove o arquivo e git faz add automaticamente para o staged
 
 git commit --amend --> adiciona ao ultimo commit os arquivos q estao no staged. 
 
+git diff --staged --> diferenca entre local e staged
 -----------------------------------------------------------------------------------
 git remote -v -> lista urls remotos 
 git remote add lab  git@github.com:herrera/lab02react.git --> pode usar lab na linha de comando ao inves da url completa
