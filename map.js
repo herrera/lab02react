@@ -4,7 +4,7 @@ const numbers2 = numbers.map(function(el) {
     return el *2
 })
 
-// outra versao .... alterado..nao ir par.. opa nao era para ir 2
+// outra versao .... alterado..nao ir par.. opa nao era para ir 2 ..
 
 const numbers21 = numbers.map(el => el *2)
 

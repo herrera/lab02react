@@ -1,28 +1,34 @@
 modificado ou unstaged -- arquivo alterado mas nao staged 
 untracked -- arquivos nao rastreados (novos)
-staged(preparado) -- foi marcado para realizar commit por git add
+staged(preparado) -- aguardando para realizar o commit por git add
 committed 
 
-git commit -am ' test'  --- faz um add arq rastreados e depois commit 
-git rm arq   -- remove o arquivo e git faz add automaticamente para o staged 
+via git bash --> vermelho local, verde staged..
+
+git commit -am ' test'  --> faz um add arq rastreados para staged e depois commit
+
+git rm arq   --> normalmente teria q 1)apagar o arq de depois 2)add para staged para posterior commit, rm faz isso. 
     caso tenha sido alterado alteriormente e staged,  e necessario git rm -f arq  para forçar o delete
- git rm --cached arq  - remove o arquivo identico a rm, so q nao apaga localmente e deixa nao rastreavel
- git rm arq1 arq2  -altera nome arquivo e coloca como staged
+git rm --cached arq  - remove o arquivo identico a rm, so q nao apaga localmente e deixa nao rastreavel
+git rm arq1 arq2  -altera nome arquivo e coloca como staged
      é similar a mv arq1 arqv2 , git rm arq1 e git add arq
 
  git add -p -->  Patch
                 opcao s (split) voce pode selecionar conteudo do arquivo q vai para o stage,
                 opcao e voce pode alterar conteudo antes de mandar para stage
+
  git log -p -2   --- -p  mostra as diferencas do commit e -2 os dois ultimos
  git log --stat  --> log com statistica reduzida
  git log --pretty=oneline  -->
  git log --pretty=format:"%h - %an, %ar : %s"  --> mostra 6 dig hash, nome usuario, tempo q foi alterado, nome commit
  git log --pretty=format:"%h %s" --graph  --> mostra grafico ASCII, bom para merge
 
-git commit --amend --> adiciona ao ultimo commit os arquivos q estao no staged. 
+git commit --amend --> adiciona ao ultimo commit os arquivos q estao no staged, pode alterar so texto 
 
-git diff --staged --> diferenca entre local e staged
------------------------------------------------------------------------------------
+git diff  --> diferença entre local e staged
+git diff --staged --> diferenca entre staged e committed  (similar a --cached)
+git diff hotfix  ==> diferencas com outro branch, no caso hotfix
+------------------------------------------------------------------------------------
 git remote -v -> lista urls remotos 
 git remote add lab  git@github.com:herrera/lab02react.git --> pode usar lab na linha de comando ao inves da url completa
                                                        por exemplo git fetch lab
@@ -43,3 +49,4 @@ git branch -vv  --> lista os branches e o tracking  (informacao local, dar git f
 git fetch --> baixa as alteracoes no servidor q vc ainda nao tem, ele n modificará seu diretorio de trabalho
 git pull  -->  é um git fetch seguido de um git merge
 
+.
