@@ -22,7 +22,7 @@ git rm arq1 arq2  -altera nome arquivo e coloca como staged
  git log --pretty=oneline  -->
  git log --pretty=format:"%h - %an, %ar : %s"  --> mostra 6 dig hash, nome usuario, tempo q foi alterado, nome commit
  git log --pretty=format:"%h %s" --graph  --> mostra grafico ASCII, bom para merge
-
+ git log --oneline hotfix -> log do branch hotfix
 git commit --amend --> adiciona ao ultimo commit os arquivos q estao no staged, pode alterar so texto 
 
 git diff  --> diferença entre local e staged
@@ -53,4 +53,5 @@ git reset --soft HEAD~3 , restaura os tres ultimos commits e deixa na area de st
 git reflog  --> log de referencias
 
 git rebase -i HEAD~3 --> junta os tres ultimos commits em um so
+git cherry-pick 9342d2 --> traz o commit de outra branch
 
