@@ -52,3 +52,5 @@ git pull  -->  é um git fetch seguido de um git merge
 git reset --soft HEAD~3 , restaura os tres ultimos commits e deixa na area de stage
 git reflog  --> log de referencias
 
+git rebase -i HEAD~3 --> junta os tres ultimos commits em um so
+
