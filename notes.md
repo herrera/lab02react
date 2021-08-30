@@ -49,4 +49,6 @@ git branch -vv  --> lista os branches e o tracking  (informacao local, dar git f
 git fetch --> baixa as alteracoes no servidor q vc ainda nao tem, ele n modificará seu diretorio de trabalho
 git pull  -->  é um git fetch seguido de um git merge
 
-.
+git reset --soft HEAD~3 , restaura os tres ultimos commits e deixa na area de stage
+git reflog  --> log de referencias
+
