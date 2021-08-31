@@ -1,1 +1,1 @@
-arqui 30.000
+arqui 3
