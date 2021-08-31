@@ -1,2 +1,2 @@
 
-arquivo 1000
+arquivo 10.000
